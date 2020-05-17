@@ -3,54 +3,54 @@ var rooms = [
     title: "Room Only - 70% Special Offer",
     description: "This rate plan includes 70% discount on Room only basis ",
     price: "USD 234.11 per night",
-    image: "/assets/package_room/room_1jpg",
+    image: "assets/package_room/room_1.jpg",
   },
   {
     title: "Bed & Breakfast - 50% Special Offer",
     description:
       "This rate plan includes 50% discount on Bed & Breakfast basis .",
     price: "USD 197.60 per night ",
-    image: "../assets/package_room/room_2jpg",
+    image: "assets/package_room/room_2.jpg",
   },
   {
     title: "Half Board - 25% Special Offer",
     description: "This rate includes 25% discount on Half Board basis rates.",
     price: "USD 230.40 per night ",
-    image: "assets/package_room/room_3jpg",
+    image: "assets/package_room/room_3.jpg",
   },
   {
     title: "Full Board - 23% Special Offer",
     description: "This rate plan includes 23% discount on Full Board basis .",
     price: "USD 252.40 per night",
-    image: "assets/package_room/room_4jpg",
+    image: "assets/package_room/room_4.jpg",
   },
   {
     title: "Bed & Breakfast",
     description:
       "Indulge your taste for modern luxury combined with safari chic in the peaceful and hospitable environment that is Jetwing Yala. Further to the experience this...",
     price: " USD 282.30 per night",
-    image: "assets/package_room/room_5jpg",
+    image: "assets/package_room/room_5.jpg",
   },
   {
     title: "Room Only",
     description:
       "Indulge your taste for modern luxury combined with safari chic in the peaceful and hospitable environment that is Jetwing Yala. Each room has an en-suite...",
     price: " USD 267.30 per night",
-    image: "../assets/package_room/room_6jpg",
+    image: "assets/package_room/room_6.jpg",
   },
   {
     title: "Half Board",
     description:
       "Indulge your taste for modern luxury combined with safari chic in the peaceful and hospitable environment that is Jetwing Yala. Further to the experience this...",
     price: " USD 307.30 per night",
-    image: "../assets/package_room/room_1jpg",
+    image: "assets/package_room/room_1.jpg",
   },
   {
     title: "Full Board-",
     description:
       "Indulge your taste for modern luxury combined with safari chic in the peaceful and hospitable environment that is Jetwing Yala. Further to the experience, this...",
     price: "USD 377.30 per night ",
-    image: "assets/package_room/room_2jpg",
+    image: "assets/package_room/room_2.jpg",
   },
 ];
 
@@ -84,7 +84,7 @@ $(function () {
         $lowerMain,
         $lowerSub;
 
-      name = Room.name;
+      name = Room.title;
       image = Room.image;
       description = Room.description;
       price = Room.price;
