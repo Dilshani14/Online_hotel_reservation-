@@ -89,7 +89,7 @@ $(function () {
       description = Room.description;
       price = Room.price;
 
-      console.log()
+      console.log();
       $room = $("<div>").addClass("container-fluid");
 
       $roomContainer = $("<div>").addClass("container view_pack");
@@ -108,26 +108,26 @@ $(function () {
       $image.appendTo($imageMain);
       $imageMain.appendTo($roomMain);
 
-      /* Movie Title */
+      /* Room Title */
       $nameMain = $("<div>").addClass("col-md-8 col-sm-8 col-xs-12 c_2");
-          $nameSub1 = $("<div>").addClass("row");
-            $nameSub2 = $("<div>").addClass("col-md-12 c_5");
-              $name = $("<h3>").addClass("title").text(name);
+      $nameSub1 = $("<div>").addClass("row");
+      $nameSub2 = $("<div>").addClass("col-md-12 c_5");
+      $name = $("<h3>").addClass("title").text(name);
 
       $name.appendTo($nameSub2);
       $nameSub2.appendTo($nameSub1);
       $nameSub1.appendTo($nameMain);
 
-          $descriptionMain = $("<div>").addClass("row");
-            $descriptionSub1 = $("<div>").addClass("col-md-9 col-sm-9 col-xs-12 c_3");
-              $description = $("<p>").addClass("description").text(description);
+      $descriptionMain = $("<div>").addClass("row");
+      $descriptionSub1 = $("<div>").addClass("col-md-9 col-sm-9 col-xs-12 c_3");
+      $description = $("<p>").addClass("description").text(description);
 
       $description.appendTo($descriptionSub1);
 
-          $priceMain = $("<div>").addClass("col-md-3 col-sm-3 col-xs-12 c_4");
-            $priceSub1 = $("<div>").addClass("price_");
-              $priceSub2 = $("<span>").addClass("from_price").text("From");
-                $priceSub3 = $("<span>").addClass("price").text(price);
+      $priceMain = $("<div>").addClass("col-md-3 col-sm-3 col-xs-12 c_4");
+      $priceSub1 = $("<div>").addClass("price_");
+      $priceSub2 = $("<span>").addClass("from_price").text("From");
+      $priceSub3 = $("<span>").addClass("price").text(price);
 
       $priceSub2.appendTo($priceSub1);
       $priceSub3.appendTo($priceSub1);
