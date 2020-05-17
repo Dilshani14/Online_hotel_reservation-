@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web fundamentals-Form Components</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<h1>
+    Registration Form
+</h1>
+<form action="sample.php" method="POST">
+    <fieldset>
+        <legend>Personal Data</legend>
+        <table>
+            <tr>
+                <td><label for="fname">First Name</label></td>
+                <td><input id="fname" type="text" name="first_name"/></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name</label>
+                <td><input id="lname" type="text" name="last_name"/></td>
+            </tr>
+            <tr>
+                <td><label for="dateofbirth">Date of Birth</label></td>
+                <td><input id="dateofbirth" type="date" name="dob" placeholder="dd-mm-yyyy"/>
+                    <span><i class="fa fa-calendar"></i></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td><input id="male" type="radio" name="gender" value="male"/>Male
+                    <input id="female" type="radio" name="gender" value="female"/>Female
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Contact Details</legend>
+        <table>
+            <tr>
+                <td><label for="stline1">Street Line 1</label></td>
+                <td><input id="stline1" type="text" name="str_line01"/></td>
+            </tr>
+
+            <tr>
+                <td><label for="stline2">Street Line 2</label></td>
+                <td><input id="stline2" type="text" name="str_line02"/></td>
+            </tr>
+
+            <tr>
+                <td><label for="city">City</label></td>
+                <td><input id="city" type="text" name="city"/></td>
+            </tr>
+
+            <tr>
+                <td><label for="postalCode">Postal Code</label></td>
+                <td><input id="postalCode" type="text" name="postal_code"/></td>
+            </tr>
+
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+                    <select id="country">
+                        <option value="countryNoSel">Select Country</option>
+                        <optgroup label="European">
+                            <option value="russia">Russia</option>
+                            <option value="france">France</option>
+                            <option value="spain">Spain</option>
+                            <option value="sweden">Sweden</option>
+                        </optgroup>
+
+                        <optgroup label="African">
+                            <option value="algeria">Algeria</option>
+                            <option value="angola">Angola</option>
+                            <option value="benin">Benin</option>
+                            <option value="botswana">Botswana</option>
+                            <option value="burkina_faso">Burkina Faso</option>
+                            <option value="cameroon">Cameroon</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input id="email" type="email" name="email"/></td>
+            </tr>
+
+            <tr>
+                <td><label for="twitter">Twitter</label></td>
+                <td><input id="twitter" type="text" name="twitter"/></td>
+            </tr>
+        </table>
+
+        <fieldset>
+            <legend>Phone</legend>
+
+            <table>
+                <tr>
+                    <td><label for="mob">Mobile</label></td>
+                    <td><input id="mob" type="text" name="cont_mobile"/></td>
+                </tr>
+
+                <tr>
+                    <td><label for="fixedLine">Fixed Line</label></td>
+                    <td><input id="fixedLine" type="text" name="cont_fixedline"/></td>
+                </tr>
+
+                <tr>
+                    <td><label for="fax">Fax</label></td>
+                    <td><input id="fax" type="text" name="cont_fax"/></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="4"><label>Contact preferences</label></td>
+                    <td><input id="contactPref_mob" type="checkbox" name="cont_pref[]mobile" checked/>Mobile</td>
+                </tr>
+
+                <tr>
+                    <td><input id="contactPref_fixed" type="checkbox" name="cont_pref[]fixed"/>Fixed Line</td>
+                </tr>
+                <tr>
+                    <td><input id="contactPref_email" type="checkbox" name="cont_pref[]email"/>Email</td>
+                </tr>
+                <tr>
+                    <td><input id="contactPref_twitter" type="checkbox" name="cont_pref[]twitter"/>Twitter</td>
+                </tr>
+
+            </table>
+        </fieldset>
+    </fieldset>
+
+    <fieldset>
+        <legend>Wisdompath Account</legend>
+        <table>
+            <tr>
+                <td><label for="stdId">Student ID</label></td>
+                <td><input id="stdId" type="text" name="std_id" placeholder="WP"/></td>
+            </tr>
+
+            <tr>
+                <td><label for="batch">Batch</label></td>
+                <td><select id="batch">
+                    <option value="batchNoSel">Select Batch</option>
+                    <option value="webFun">Web Fundamentals</option>
+                    <option value="advJs">Advanced Javascripting</option>
+                </select></td>
+            </tr>
+        </table>
+
+        <fieldset>
+            <legend>Wiki Account</legend>
+            <table>
+                <tr>
+                    <td><label for="wikiUname">Username</label></td>
+                    <td><input id="wikiUname" type="text" name="wiki_username"/></td>
+                </tr>
+
+                <tr>
+                    <td><label for="wikiPwd">Password</label></td>
+                    <td><input id="wikiPwd" type="text" name="wiki_password"/></td>
+                </tr>
+                <tr>
+                    <td><label for="wikiConfPwd">Confirm Password</label></td>
+                    <td><input id="wikiConfPwd" type="text" name="wiki_confirm_password"/></td>
+                </tr>
+            </table>
+
+        </fieldset>
+    </fieldset>
+    <br/>
+    <input type="reset" name="reset" value="Clear"/>
+    <input type="submit" name="submit" value="Submit"/>
+
+</form>
+</body>
+</html>
+
+
+<div class="container-fluid welcome">
+    <div class="row">
+      <div class="col-md-6 feature_box1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+    
+      <div class="col-md-6 feature_box2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+      </div>

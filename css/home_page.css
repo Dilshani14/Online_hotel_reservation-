@@ -1,0 +1,291 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Baloo Da 2", serif;
+}
+.class-row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+/* navigation start */
+header {
+  background: url(../assets/HBR10.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.menu {
+  padding: 0 100px 0 100px;
+  box-sizing: border-box;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: absolute;
+  /* display: flex;
+    justify-content: space-between; */
+}
+.brand_logo {
+  width: 10%;
+  float: left;
+  background-size: cover;
+}
+/* .menu img{
+    width: 10%;
+    float: left;
+} */
+nav {
+  position: relative;
+  float: right;
+  padding-top: 12px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  display: block;
+  font-weight: bold;
+  padding: 30px 32px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background: #069370;
+  color: #ffffff;
+}
+nav ul li ul {
+  display: block;
+  background: rgba(255, 255, 255, 0.5);
+  min-width: 250px;
+  position: absolute;
+  /* margin: 1px; */
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: 0.5;
+  transform: translateY(40px);
+  /* meka vada karanne ne */
+}
+nav ul li ul li a {
+  padding: 10px;
+}
+nav ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px) 0.5s;
+  /* meka vada karanne */
+}
+/*---------------------------------------- navigation end  --------------------------------/
+
+
+/* booking box start*/
+
+.booking_form {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  margin: 0px auto !important;
+}
+.booking_container {
+  width: fit-content;
+  position: relative;
+  margin: 0px auto;
+  padding: 20px;
+  background: #e2eaf75e;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.booking-element {
+  margin-right: 10px;
+}
+
+.booking-element input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.booking-button {
+  width: 150px;
+  margin: auto 0px 0px 0px;
+}
+
+.booking-button button {
+  padding: 7px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.booking-element select {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px !important;
+}
+
+.booking-lable {
+  display: block !important;
+  font-size: 12px;
+  font-weight: 600;
+  color: #4d4c4c;
+  margin: 3px !important;
+}
+
+#booking_form {
+  display: flex;
+  flex-basis: auto;
+  justify-content: center;
+}
+/*------------------------------- booking end -------------------------------------------*/
+
+/* Description  start*/
+
+.description_section {
+  background: #f4f4f6;
+  min-height: 250px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.description_section p {
+  font-size: 120%;
+  color: #65737e;
+  text-align: center;
+}
+.description_section h2 {
+  color:#606d23;
+   margin-top: 30px;
+  margin-bottom: 20px; 
+}
+.description_section h1{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+/* image slide show start */
+.image_carosal {
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+/* --------------------------------- description end --------------------------------------- */
+
+/*---------------------------------why choose us start ------------------------------------ */
+.welcome {
+  background-color: 	#f8f4dc;
+  min-height: 550px;
+  min-width: 100%;
+}
+/* .feature_box2 {
+  min-height: 200px;
+} */
+.welcome h1{
+  margin-bottom: 30px;
+} 
+
+
+/* .about{
+  margin-top: 30px;
+} */
+.welcome .feature_box1 img{
+max-width: 100%;
+}
+.feature_box2 p{
+text-align: center;
+margin-top: 15px;
+padding: 20px;
+font-size: 116%;
+}
+.list_feature{
+margin-left: 100px;
+font-size: 116%;
+margin-bottom: 20px;
+line-height: 35px;
+
+}
+.section_list{
+box-sizing: border-box;
+color: #65737e;
+}
+.hotel-introduction-inner p{
+/* padding-right: 16%; */
+display: flex;
+flex-direction: column;
+line-height: 27px;
+/* text-align: center; */
+}
+.hotel-introduction-inner h2 .welcome_to{
+  display: block;
+  color: #606d23;
+  font-size: 1.4375rem;
+}
+
+/*---------------------------------hover grid start ------------------------------------ */
+.card_1{
+  margin-top: 40px !important;
+}
+.card_3{
+  margin-top: 40px !important;
+}
+.card_2{
+  margin-top: 22px !important;
+}
+section{
+margin-top: 100px;
+display: flex;
+background-color: thistle;
+justify-content: center;
+align-items: center;
+
+}
+.hover_imges{
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.hover_imges .card_hover:hover{
+  height: 420px; 
+}
+
+.hover_imges .card_hover{
+  position: relative;
+  max-width: 300px;/*white box width*/
+  height: 215px; /* First apply 420px and fix height then after hover have to convert 215px and hover height should be 420px*/
+  background: #ffffff;
+  margin: 30px 20px;/*white box space*/
+  padding: 25px 20px;/*white box padding*/
+  display: flex;
+  flex-direction: column;
+  box-shadow:0 5px 202px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;/*should refer again*/
+}
+.hover_imges .card_hover .imgBx{
+  position: relative;
+  width: 260px;/*image size*/
+  height: 260px;/*image height*/
+   top: -38px;
+  left: 1px;
+   z-index: 1;
+  box-shadow:0 2px 5px rgba(0, 0, 0, 0.2);  
+}
+.hover_imges .card_hover .imgBx img{
+  max-width: 100%;
+  border-radius: 4px;
+}
+/* .hover_imges .card_hover .content{
+  position: relative;
+  margin-top: -140px;
+} */
+/*---------------------------------hover grid end ------------------------------------ */

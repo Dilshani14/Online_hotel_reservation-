@@ -1,0 +1,55 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Baloo Da 2", serif;
+}
+.view_pack{
+    margin-top: 30px;
+}
+.c_1{
+    background-color: khaki;
+    height:250px ;
+}
+.c_2{
+    background-color:red;
+    height:60px;
+}
+.c_3{
+    background-color: royalblue;
+    height: 71px;
+}
+.c_4{
+    background-color: green;
+    height: 107px;
+}
+.c_5{
+    background-color: darkblue;
+    height: 73px;
+}
+.c_7{
+    background-color: darkmagenta;
+    height: 70px;
+}
+.c_8{
+    background-color: black;
+    height: 10px;
+}
+.c_1 img{
+    min-width: 100%;
+}
+.ui_card_1 .c_2 .c_5 h3{
+    color: #ffffff;
+    padding-top: 22px;
+    padding-left: 5px;
+}
+
+.ui_card_1 .c_2 .c_3 p{
+    color: #ffffff;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.c_2 .price_  .from_price{
+    display: block;
+    color: #ffffff;
+}
